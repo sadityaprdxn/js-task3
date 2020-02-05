@@ -1,42 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 
-<html lang="en"> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
- 
-  <meta charset="utf-8">
+    <title>JS TASK</title>
+    <link rel="shortcut icon" href="favicon.ico" />
 
-  <title>JS TASK</title>
-  <link rel="shortcut icon" href="favicon.ico" />
+    <!--font-awesome link for icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!--font-awesome link for icons-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+    <link rel="stylesheet" media="screen" href="assets/css/style.css" />
+  </head>
 
-  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <body>
+    <!--container start-->
+    <div class="container">
+      <!--header section start-->
+      <header></header>
+      <!--header section end-->
+      <!--main section start-->
+      <main>
+        <div class="wrapper">
+          <div class="display">
+            <ul>
+              <li>movie name</li>
+              <li>release date</li>
+              <li>actor</li>
+              <li>producer name</li>
+            </ul>
+          </div>
+          <form>
+            <input type="text" id="name" placeholder="ENTER MOVIE-NAME / ACTOR-NAME"/>
+            <button id="submit" title="Submit">search</button>
+            <ul class="list"></ul>
+          </form>
 
-</head>
+          <div class="result">
+            <ul>
+              <li>movie name</li>
+              <li>release date</li>
+              <li>actor</li>
+              <li>producer name</li>
+            </ul>
+          </div>
 
-<body>
-  <!--container start-->
-  <div class="container">
-    <!--header section start-->
-    <header>      
-    </header>
-    <!--header section end-->
-    <!--main section start-->
-    <main>
+          
+        </div>
+      </main>
+      <!--main section end-->
 
-    </main>
-    <!--main section end-->
+      <!--footer section start-->
+      <footer></footer>
+      <!--footer section end-->
+    </div>
+    <!--container end-->
 
-    <!--footer section start-->
-    <footer>      
-    </footer>
-    <!--footer section end-->
-  </div>
-  <!--container end-->
-
-<script src="assets/js/script.js"></script>
-</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
