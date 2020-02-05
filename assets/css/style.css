@@ -120,94 +120,81 @@ li {
   main styling starts here
 =================================*/
 
-
-.container{
-  height: 100vh;
-}
-
-main{
+.display {
   width: 100%;
-}
-.display{
-  width: 100%;
+  border: 0.5px solid #3c491c;
+  border-radius: 20px;
+  margin: 20px auto;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
-  overflow: auto;
-  margin: 20px auto;
   background-image: -webkit-gradient(linear, left top, right top, from(#3c491c) , to(#f9ffe6));
   background-image: linear-gradient(to right, #3c491c , #f9ffe6);
-  border-radius: 20px;
-  border: 0.5px solid #3c491c;
-  /* float: left; */
 }
 
-.display ul{
+.display ul {
   width: 10%;
-  flex-basis: 10%;
-  display: inline-block;
   padding: 20px 0;
-  /* float: left; */
-  background:transparent;
-  color: #000;
-  text-transform: capitalize;
   border-right: 0.5px solid #3c491c;
+  display: inline-block;
+  flex-basis: 10%;
+  color: #000;
+  background:transparent;
+  text-transform: capitalize;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
 
-.display ul:hover{
-  background-color: #3c491c;
+.display ul:hover {
   color: #fff;
+  background-color: #3c491c;
 }
 
-.display ul:first-child{
-  text-transform: uppercase;
-  background-color: #131a00;
-  color: #fff;
+.display ul:first-child {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  color: #fff;
+  background-color: #131a00;
+  text-transform: uppercase;
 }
 
-.display ul:last-child{
-  border: none;
-}
+.display ul:last-child { border: none; }
 
-.display li{
-  display: block;
-  text-align: center;
-  box-sizing: border-box;
+.display li {
   padding: 20px 5px;
+  display: block;
+  box-sizing: border-box;
   font-size: 12px;
+  text-align: center;
 }
 
 
 
-form{
+form {
+  width: 30%;
+  margin: 0 auto;
   display: -webkit-box;
   display: flex;
-  position: relative;
   flex-wrap: wrap;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
-  width: 30%;
-  margin: 0 auto;
   -webkit-box-align: center;
           align-items: center;
   -webkit-box-pack: center;
           justify-content: center;
 }
 
-form button{
+form button {
   width: 30%;
   min-height: 40px;
-  background-color: #131a00;
-  color: #fff;
   border: none;
   border-radius: 10px;
+  background-color: #131a00;
+  color: #fff;
   font-size: 11px;
   text-transform: uppercase;
   outline: none;
@@ -215,23 +202,24 @@ form button{
           transition-duration: 0.2s;
 }
 
-form button:hover{
+form button:hover {
   background-color: #cad4af;
   color: #000;
 }
 
-form input{
+form input {
   width: 100%;
-  margin-bottom: 20px;
   min-height: 40px;
-  box-sizing: border-box;
   padding: 8px;
-  outline: none;
-  border-radius: 12px;
   border: 1px solid #3c491c;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  outline: none;
 }
 
-.result{
+.result {
+  padding: 20px 0;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -239,37 +227,35 @@ form input{
           flex-direction: column;
   -webkit-box-align: center;
           align-items: center;
-  padding: 20px 0;
 }
 
-.result ul{
-  display: inline-block;
+.result ul {
   width: 50%;
-  text-transform: capitalize;
-  background-color: #f0f8d4;
   border-bottom: 0.5px solid #4d6900;
+  display: inline-block;
+  background-color: #f0f8d4;
+  text-transform: capitalize;
 }
 
-.result li{
+.result li {
+  width: 25%;
+  padding: 15px;
   font-size: 12px;
   box-sizing: border-box;
-  width: 25%;
   float: left;
   text-align: center;
-  padding: 15px;
 }
 
-.result ul:first-child{
-  text-transform: uppercase;
-  background-color: #131a00;
-  color: #fff;
-  border: none; 
-  text-transform: uppercase;
+.result ul:first-child {
+  border: none;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  background-color: #131a00;
+  color: #fff;
+  text-transform: uppercase;
 }
 
-.result ul:last-child{
+.result ul:last-child {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-bottom: none;
