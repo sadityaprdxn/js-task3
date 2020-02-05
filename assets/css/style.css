@@ -84,7 +84,7 @@ sub { bottom: -.25em; }
 /*for all*/
 body {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a { 
@@ -100,7 +100,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 95%; 
   margin: 0 auto;
 }
 /*=================================
@@ -121,10 +121,159 @@ li {
 =================================*/
 
 
+.container{
+  height: 100vh;
+}
+
+main{
+  width: 100%;
+}
+.display{
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  overflow: auto;
+  margin: 20px auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(#3c491c) , to(#f9ffe6));
+  background-image: linear-gradient(to right, #3c491c , #f9ffe6);
+  border-radius: 20px;
+  border: 0.5px solid #3c491c;
+  /* float: left; */
+}
+
+.display ul{
+  width: 10%;
+  flex-basis: 10%;
+  display: inline-block;
+  padding: 20px 0;
+  /* float: left; */
+  background:transparent;
+  color: #000;
+  text-transform: capitalize;
+  border-right: 0.5px solid #3c491c;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.display ul:hover{
+  background-color: #3c491c;
+  color: #fff;
+}
+
+.display ul:first-child{
+  text-transform: uppercase;
+  background-color: #131a00;
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.display ul:last-child{
+  border: none;
+}
+
+.display li{
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px 5px;
+  font-size: 12px;
+}
 
 
 
+form{
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
 
+form button{
+  width: 30%;
+  min-height: 40px;
+  background-color: #131a00;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  outline: none;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+form button:hover{
+  background-color: #cad4af;
+  color: #000;
+}
+
+form input{
+  width: 100%;
+  margin-bottom: 20px;
+  min-height: 40px;
+  box-sizing: border-box;
+  padding: 8px;
+  outline: none;
+  border-radius: 12px;
+  border: 1px solid #3c491c;
+}
+
+.result{
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.result ul{
+  display: inline-block;
+  width: 50%;
+  text-transform: capitalize;
+  background-color: #f0f8d4;
+  border-bottom: 0.5px solid #4d6900;
+}
+
+.result li{
+  font-size: 12px;
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding: 15px;
+}
+
+.result ul:first-child{
+  text-transform: uppercase;
+  background-color: #131a00;
+  color: #fff;
+  border: none; 
+  text-transform: uppercase;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.result ul:last-child{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom: none;
+}
 
 
 /*=================================
@@ -144,11 +293,3 @@ li {
  /*=================================
   footer styling ends here
 =================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
