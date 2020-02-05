@@ -59,7 +59,6 @@ function search(e) {
 }
 
 
-
 function show() {
   var ulNode = document.createElement("ul");
   var parentNode = document.querySelector(".display");
